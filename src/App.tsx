@@ -1,3 +1,4 @@
+import { Badge } from "./components";
 import { Icon } from "./components/atoms/icons/Icon";
 import { Image } from "./components/atoms/images/Image";
 import { Divider } from "./components/atoms/separators/Divider";
@@ -5,8 +6,10 @@ import { Divider } from "./components/atoms/separators/Divider";
 function App() {
   return (
     <div>
-      <div className="text-2xl bold">Title</div>
-      <Image src="/src/assets/images/cindy.png" />
+      <div className="tw-text-2xl tw-bold">Title</div>
+      <Badge value={1} position="br">
+        <Image src="/src/assets/images/cindy.png" />
+      </Badge>
 
       <p>
         Hello <Icon name="search" size={48} />

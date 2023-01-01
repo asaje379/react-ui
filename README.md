@@ -1,2 +1,5 @@
 # react-ui
-React component library and hooks
+React components and hooks for faster frontend development.
+
+## Installation
+

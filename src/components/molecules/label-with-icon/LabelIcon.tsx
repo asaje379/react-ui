@@ -12,7 +12,7 @@ export const LabelIcon = ({
   children,
 }: PropsWithChildren<LabelIconProps>) => {
   return (
-    <div className="flex items-center">
+    <div className="tw-flex tw-items-center">
       {iconPosition === "left" && (
         <Icon name={icon} size={size} color={color} type={iconType} />
       )}

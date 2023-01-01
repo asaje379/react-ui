@@ -10,14 +10,14 @@ export const Badge = ({
   value = "",
 }: PropsWithChildren<BadgeProps>) => {
   const css = [
-    "absolute rounded-full flex justify-center items-center",
+    "tw-absolute tw-rounded-full tw-flex tw-justify-center tw-items-center",
     BADGE_POSITION_CSS[position],
     `lib-translate-${position}-${offset}`,
     className,
   ].join(" ");
 
   return (
-    <div className="relative w-fit">
+    <div className="tw-relative tw-w-fit">
       {children}
       <div className={css}>{value}</div>
     </div>
