@@ -1,0 +1,17 @@
+@for $i from 0 through 5 {
+  .lib-translate-bl-#{$i} {
+    translate: (($i * 0.25) + rem) (-($i * 0.25) + rem);
+  }
+
+  .lib-translate-br-#{$i} {
+    translate: (-($i * 0.25) + rem) (-($i * 0.25) + rem);
+  }
+
+  .lib-translate-tl-#{$i} {
+    translate: (($i * 0.25) + rem) (($i * 0.25) + rem);
+  }
+
+  .lib-translate-tr-#{$i} {
+    translate: -(($i * 0.25) + rem) (($i * 0.25) + rem);
+  }
+}
