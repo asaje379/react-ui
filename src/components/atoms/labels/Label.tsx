@@ -1,33 +1,33 @@
-import { PropsWithChildren } from "react";
-import { LabelProps } from "./labels.typings";
+import { PropsWithChildren } from 'react';
+import { LabelProps } from './labels.typings';
 import {
   LABEL_CSS,
   LABEL_CSS_ALIGNMENT,
   LABEL_CSS_OFFSET,
-} from "./labels.variables";
+} from './labels.variables';
 
 export const Label = ({
   children,
   description,
-  size = "medium",
-  align = "left",
+  size = 'medium',
+  align = 'left',
   offset = 0,
 }: PropsWithChildren<LabelProps>) => {
   const childrenCss = [
-    "text-dark font-bold",
+    'tw-text-dark tw-font-bold',
     LABEL_CSS[size].title,
     LABEL_CSS_ALIGNMENT[align],
-  ].join(" ");
+  ].join(' ');
 
   const descriptionCss = [
-    "text-gray font-semibold",
+    'tw-text-gray tw-font-semibold',
     LABEL_CSS[size].description,
     LABEL_CSS_ALIGNMENT[align],
     LABEL_CSS_OFFSET[offset],
-  ].join(" ");
+  ].join(' ');
 
   return (
-    <div className="w-fit">
+    <div className="tw-w-fit">
       <div className={childrenCss}>{children}</div>
       <div className={descriptionCss}>{description}</div>
     </div>

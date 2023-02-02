@@ -1,7 +1,7 @@
-import { LabelHTMLAttributes } from "react";
+import { LabelHTMLAttributes } from 'react';
 
-export type LabelSize = "small" | "medium" | "large" | "x-large" | "huge";
-export type LabelAlignment = "left" | "center" | "right" | "justify";
+export type LabelSize = 'small' | 'medium' | 'large' | 'x-large' | 'huge';
+export type LabelAlignment = 'left' | 'center' | 'right' | 'justify';
 
 export interface LabelTitleDescription {
   title: string;

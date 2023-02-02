@@ -1,10 +1,10 @@
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import "../../../assets/scss/index.scss";
-import { Label } from "../../../components/atoms/labels/Label";
+import '../../../assets/scss/index.scss';
+import { Label } from '../../../components/atoms/labels/Label';
 
 export default {
-  title: "atoms/label",
+  title: 'atoms/label',
   component: Label,
 } as ComponentMeta<typeof Label>;
 
@@ -22,15 +22,15 @@ const FollowersTemplate: ComponentStory<typeof Label> = (args) => (
 
 export const BaseLabel = Template.bind({});
 BaseLabel.args = {
-  description: "Torrance, CA, United States",
+  description: 'Torrance, CA, United States',
 };
 
 export const PostsLabel = PostTemplate.bind({});
 PostsLabel.args = {
-  description: "Posts",
+  description: 'Posts',
 };
 
 export const FollowersLabel = FollowersTemplate.bind({});
 FollowersLabel.args = {
-  description: "Followers",
+  description: 'Followers',
 };

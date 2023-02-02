@@ -1,5 +1,4 @@
-import { IconType } from "../../atoms/icons/icons.typings";
-import { LabelSize } from "../../atoms/labels/labels.typings";
+import { IconType } from '../../atoms/icons/icons.typings';
 
 export interface LabelIconProps {
   /**
@@ -8,9 +7,14 @@ export interface LabelIconProps {
   icon: string;
 
   /**
-   * Text color
+   * The text's color
    */
   color?: string;
+
+  /**
+   * The icon's color
+   */
+  iconColor?: string;
 
   /**
    * The type of the icon
@@ -35,5 +39,5 @@ export interface LabelIconProps {
   /**
    * The position of the icon
    */
-  iconPosition?: "left" | "right";
+  iconPosition?: 'left' | 'right';
 }

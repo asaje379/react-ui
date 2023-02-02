@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
-export type BadgePosition = "tl" | "tr" | "bl" | "br";
+export type BadgePosition = 'tl' | 'tr' | 'bl' | 'br';
 
 export interface BadgeProps {
   /**

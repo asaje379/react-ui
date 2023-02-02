@@ -1,7 +1,7 @@
-import { Badge } from "./components";
-import { Icon } from "./components/atoms/icons/Icon";
-import { Image } from "./components/atoms/images/Image";
-import { Divider } from "./components/atoms/separators/Divider";
+import { Badge } from './components';
+import { Icon } from './components/atoms/icons/Icon';
+import { Image } from './components/atoms/images/Image';
+import { Divider } from './components/atoms/separators/Divider';
 
 function App() {
   return (

@@ -1,19 +1,19 @@
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import "../../../assets/scss/index.scss";
-import { Image } from "../../../components/atoms/images/Image";
+import '../../../assets/scss/index.scss';
+import { Image } from '../../../components/atoms/images/Image';
 
 export default {
-  title: "atoms/images",
+  title: 'atoms/images',
   component: Image,
   argTypes: {
     loading: {
-      control: "select",
-      options: ["eagger", "lazy"],
+      control: 'select',
+      options: ['eagger', 'lazy'],
     },
     ratio: {
-      control: "select",
-      options: ["auto", "square", "video", "4/3"],
+      control: 'select',
+      options: ['auto', 'square', 'video', '4/3'],
     },
   },
 } as ComponentMeta<typeof Image>;
@@ -31,20 +31,20 @@ const MultipleImagesTemplate: ComponentStory<typeof Image> = (args) => (
 
 export const BaseImage = Template.bind({});
 BaseImage.args = {
-  src: "/src/assets/images/cindy.png",
+  src: '/src/assets/images/cindy.png',
 };
 
 export const SquareImage = Template.bind({});
 SquareImage.args = {
-  ratio: "square",
-  src: "/src/assets/images/gladys.png",
+  ratio: 'square',
+  src: '/src/assets/images/gladys.png',
 };
 
 export const VideoImage = Template.bind({});
 VideoImage.args = {
-  ratio: "video",
-  src: "/src/assets/images/mountains.png",
-  width: "100%",
+  ratio: 'video',
+  src: '/src/assets/images/mountains.png',
+  width: '100%',
 };
 
 export const MultipleImage = MultipleImagesTemplate.bind({});
