@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
-import { useVisibleInPage } from "../../../hooks/useVisibleInPage";
-import { ImageProps } from "./images.typings";
-import { IMAGE_RATIO_CSS } from "./images.variables";
+import { useEffect, useState } from 'react';
+import { useVisibleInPage } from '../../../hooks/useVisibleInPage';
+import { ImageProps } from './images.typings';
+import { IMAGE_RATIO_CSS } from './images.variables';
 
 export const Image = ({
-  src = "",
+  src = '',
   alt,
-  loading = "lazy",
-  ratio = "auto",
+  loading = 'lazy',
+  ratio = 'auto',
   ...props
 }: ImageProps) => {
-  const [uri, setUri] = useState("");
-  const css = [IMAGE_RATIO_CSS[ratio], props.className].join(" ");
+  const [uri, setUri] = useState('');
+  const css = [IMAGE_RATIO_CSS[ratio], props.className].join(' ');
 
   const { elementRef: imgRef, isVisible } = useVisibleInPage({});
 
